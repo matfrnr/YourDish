@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27ae60;
+}
+
+nav a {
+  color: #999;
+  font-size: 14px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 25px;
+  color: #273e60;
+  margin-left: 100px;
+}
+
+.logo span {
+  color: #27ae60;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  gap: 100px;
+  padding: 10px 0;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  align-items: center;
+  top: 0;
+  z-index: 50;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  margin-right: 40px;
+}
+
+nav ul a {
+  position: relative;
+}
+
+nav ul a:before {
+  content: "";
+  display: block;
+  border: 1px #27ae60 solid;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+nav ul a:after {
+  content: "";
+  display: block;
+  border: 1px #27ae60 solid;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+nav ul a:hover:before,
+nav ul a:hover:after {
+  opacity: 1;
+}
+
+nav ul a:hover {
+  color: black;
+}
+
+.plat img {
+  width: 90%;
+  max-width: 850px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plat {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 140px;
+}
+
+.descriptionPlat p {
+  width: 80%;
+}
+
+.descriptionPlat p,
+h1 {
+  padding: 8px;
+}
+
+.h {
+  text-transform: uppercase;
+  font-size: calc(0.8rem + 1.5vw);
+}
+
+.descriptionPlat p:nth-child(1) {
+  color: #27ae60;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.descriptionPlat p:nth-child(3) {
+  color: #999;
+}
+
+.descriptionPlat button {
+  margin-top: 15px;
+  padding: 7px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  font-weight: 800;
+  box-shadow: 5px 5px #27ae60;
+}
+
+.descriptionPlat button:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.titreMenu {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.titreMenu p {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.menu img {
+  width: 130px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.menu1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu1 div {
+  background: white;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 25%;
+  height: 280px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu1 div p:nth-child(3) {
+  font-weight: 800;
+}
+
+.menu1 div button {
+  background: #27ae60;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+
+.menu1 div button:hover {
+  filter: brightness(85%);
+}
+
+.menu1 div p,
+.menu1 div button {
+  margin-top: 5px;
+}
+
+.about {
+  text-align: center;
+}
+
+.good {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 40px;
+}
+
+.imageMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.good img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.goodOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goodOne h3 {
+  font-size: 35px;
+  color: #273e60;
+}
+
+.goodOne p {
+  font-size: 14px;
+  color: #999;
+  width: 85%;
+}
+
+.goodOne button {
+  background: #27ae60;
+  color: white;
+  padding: 10px 20px;
+}
+
+.goodOne button:hover {
+  filter: brightness(85%);
+}
+
+.goodOne p,
+.goodOne button,
+.gooOne h3 {
+  margin: 12px 0;
+}
+
+.comm p {
+  text-align: center;
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.comm {
+  padding: 30px;
+}
+
+form {
+  background: rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  min-width: 300px;
+  margin: 30px auto 60px;
+  padding: 20px;
+}
+
+form input {
+  width: 80%;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+form button {
+  background: #27ae60;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+form button:hover {
+  filter: brightness(85%);
+}
+
+form input:focus {
+  outline: 1px #27ae60 solid;
+}
+
+.commentaire img {
+  width: 65px;
+  height: 65px;
+  border: #27ae60 2px solid;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.commentaire {
+  background: rgba(0, 0, 0, 0.05);
+
+  padding: 15px 50px;
+}
+
+.parent {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.smith {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.smith .enfant {
+  display: flex;
+  align-items: center;
+}
+
+.smith .enfant p {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.desc {
+  color: #999;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.about {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.about p {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+footer img {
+  background: #27ae60;
+  width: 60px;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+footer div {
+  text-align: center;
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+footer div {
+  padding: 10px;
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 2px;
+  width: 80%;
+  margin: auto;
+}
+
+footer span {
+  color: #27ae60;
+  font-weight: 700;
+}
+
+.moi {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.toggle_menu {
+  display: none;
+}
+
+#icons {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .comm {
+    padding: 10px 0;
+  }
+  .about {
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .plat img {
+    max-width: 600px;
+  }
+  .plat {
+    padding: 80px 60px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo a {
+    margin-left: 20px;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+  .menu1 div {
+    min-width: 40%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .plat {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 45px;
+    padding: 0;
+  }
+  .descriptionPlat {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .descriptionPlat p {
+    width: 90%;
+  }
+  .parent {
+    display: block;
+  }
+  .parent {
+    display: block;
+  }
+  .smith {
+    width: 85%;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .plat {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+    gap: 30px;
+    margin-right: 10px;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+  footer section {
+    max-width: 95%;
+  }
+  .good {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    padding: 15px 10px 0;
+    margin: 0;
+  }
+  .good img {
+    max-width: 400px;
+  }
+  .goodOne h3 {
+    font-size: 1.5rem;
+  }
+  .goodOne p {
+    font-size: 2vw;
+  }
+  .goodOne {
+    padding: 35px 20px 0;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  footer {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .menu1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .menu1 div {
+    width: 60%;
+    min-width: 50%;
+  }
+  footer {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #icons {
+    display: block;
+    margin-right: 20px;
+  }
+  #icons:before {
+    content: "\2630";
+    color: #27ae60;
+    cursor: pointer;
+  }
+  .active #icons:before {
+    content: "\2715";
+    color: #27ae60;
+  }
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul a:before {
+    display: none;
+  }
+
+  nav ul a::after {
+    display: none;
+  }
+
+  nav.active ul {
+    left: 0;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  footer {
+    display: none;
+  }
+}

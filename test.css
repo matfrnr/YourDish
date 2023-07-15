@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI";
+}
+
+.plat {
+    display: flex;
+    justify-content: center; /* Aligne horizontalement au centre */
+    align-items: center; /* Aligne verticalement au centre */
+}
+
+img{
+    width: 60%;
+}
+
+.descriptionPlat p{
+   width: 80%;
+}
+
+.descriptionPlat{
+    width: 40%  ;
+}
